@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.AccountSettingsActivity"
+    android:background="@drawable/backgroundloginpic"
+    android:gravity="top"
+    android:id="@+id/settingsaccountlayout">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/app_bar_layout"
+                android:id="@+id/settingsbar"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                app:civ_border_color="#fff"
+                app:civ_border_width="3dp"
+                android:id="@+id/profileavatar"
+                android:layout_below="@id/settingsbar"
+                android:layout_centerInParent="true"
+                android:src="@drawable/avatardefault"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/profileavatar"
+                android:layout_marginTop="30dp"
+                android:text="User Name"
+                android:textSize="30sp"
+                android:textColor="@color/whitecolor"
+                android:textStyle="bold"
+                android:id="@+id/usernamesettings"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:layout_below="@id/usernamesettings"
+                android:id="@+id/usergendertv"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:textColor="@color/whitecolor"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usergendertv"
+                android:id="@+id/userdatebirth"
+                android:layout_centerInParent="true"
+                android:textColor="@color/whitecolor"
+                android:textSize="20sp"
+                android:text="01/01/1970"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutuser"
+                android:text="Example user information"
+                android:textColor="@color/whitecolor"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/userdatebirth"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:maxLines="3"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/floateditbtn"
+        android:src="@drawable/edit"
+        android:scaleType="fitXY"
+        android:backgroundTint="@color/whitecolor"
+        />
+    <include layout="@layout/float_action_button_layout"/>
+
+</RelativeLayout>

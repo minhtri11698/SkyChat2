@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.EditInforActivity"
+    android:background="@drawable/backgroundloginpic"
+    android:id="@+id/editinforlayout">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/editinfoappbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_below="@id/editinfoappbar"
+        android:id="@+id/editNameTv"
+        android:text="Edit Display Name:"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/whitecolor"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNameTv"
+        android:background="@color/whitecolor"
+        android:id="@+id/editNameInput"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_below="@id/editNameInput"
+        android:id="@+id/editStatusTv"
+        android:text="Edit Status:"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/whitecolor"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editStatusTv"
+        android:id="@+id/editStatusInput"
+        android:background="@color/whitecolor"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxLines="3"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editdateofbirth"
+        android:layout_below="@id/editStatusInput"
+        android:textColor="@color/whitecolor"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:text="Date of birth:"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01/01/1970"
+        android:layout_below="@id/editdateofbirth"
+        android:layout_marginTop="10dp"
+        android:background="@color/whitecolor"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignStart="@id/editdateofbirth"
+        android:layout_marginEnd="10dp"
+        android:singleLine="true"
+        android:id="@+id/editdateofbirthinput"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:id="@+id/editgendertv"
+        android:textColor="@color/whitecolor"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="90dp"
+        android:layout_below="@id/editStatusInput"
+        android:layout_marginTop="15dp"
+        android:textSize="18dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/editgendertv"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/editgendertv"
+        android:id="@+id/editgenderselect"
+        android:textSize="18sp"
+        android:text="None"
+        android:background="@color/whitecolor"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/editgenderselect"
+        android:text="Save Change"
+        android:layout_marginTop="40dp"
+        android:background="@color/logincolor"
+        android:padding="5dp"
+        android:id="@+id/savechangebtn"
+        />
+
+
+</RelativeLayout>

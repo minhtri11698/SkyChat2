@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundloginpic">
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/loginpic"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:id="@+id/loginlogo"
+        android:contentDescription="@string/login"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginbutton"
+        android:textSize="15sp"
+        android:layout_below="@id/loginlogo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/login"
+        android:background="@color/logincolor"
+        android:textColor="@color/whitecolor"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupbutton"
+        android:textSize="15sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/loginbutton"
+        android:text="@string/signup"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/skyappname"
+        android:textColor="@color/whitecolor"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        />
+</RelativeLayout>
